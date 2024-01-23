@@ -1,7 +1,10 @@
-﻿namespace TrackingOrder.API.Delivery.INfrastructure.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TrackingOrder.API.Delivery.INfrastructure.Entities
 {
     public class OrderTracking
     {
+        [Key]
         public Guid OrderId { get; set; }
         public string Status { get; set; }
         public DateTime UpdateDate { get; set; }    
