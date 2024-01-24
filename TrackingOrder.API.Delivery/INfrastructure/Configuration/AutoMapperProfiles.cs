@@ -10,7 +10,8 @@ namespace TrackingOrder.API.Delivery.INfrastructure.Configuration
         public AutoMapperProfiles() 
         {
             CreateMap<OrderTracking, OrderIdRequest>().ReverseMap();
-            CreateMap<OrderTracking, TrackingOrderResponse>().ReverseMap();
+            CreateMap<OrderTracking, TrackingOrderResponse>().ReverseMap()
+                .ForMember(dest => dest.OrderId, opt => opt.Ignore());
 
         }
     }
