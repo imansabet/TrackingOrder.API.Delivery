@@ -25,7 +25,6 @@
     <Folder Include="DTO\ExternalAPIModel\Response\" />
     <Folder Include="DTO\InternalAPIModel\Embeded\" />
     <Folder Include="Extensions\" />
-    <Folder Include="INfrastructure\Repository\" />
   </ItemGroup>
 
 </Project>
