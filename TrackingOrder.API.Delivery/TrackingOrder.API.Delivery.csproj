@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Application\" />
-    <Folder Include="Controllers\" />
     <Folder Include="DTO\ExternalAPIModel\Embeded\" />
     <Folder Include="DTO\ExternalAPIModel\Request\" />
     <Folder Include="DTO\ExternalAPIModel\Response\" />

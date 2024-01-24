@@ -35,7 +35,10 @@ namespace TrackingOrder.API.Delivery.INfrastructure.Repository
         public async Task AddOrderTrackingAsync(TrackingOrderResponse orderTrackingResponse)
         {
             var orderTrackingEntity = _mapper.Map<OrderTracking>(orderTrackingResponse);
+
+            // ایجاد رکورد جدید بدون نیاز به داشتن OrderId از TrackingOrderResponse
             _dbContext.OrderTrackings.Add(orderTrackingEntity);
+
             await _dbContext.SaveChangesAsync();
         }
 

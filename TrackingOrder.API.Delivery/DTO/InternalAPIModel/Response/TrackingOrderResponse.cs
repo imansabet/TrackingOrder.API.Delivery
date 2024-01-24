@@ -2,6 +2,7 @@
 {
     public class TrackingOrderResponse
     {
+        public Guid OrderId { get; set; }
         public string Status { get; set; }
         public string Location { get; set; }
         public string PhoneNumber { get; set; }
